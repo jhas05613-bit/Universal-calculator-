@@ -1,0 +1,649 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Privacy Policy for Universal Calculator World Android Application">
+    <title>Privacy Policy - Universal Calculator World</title>
+
+    <style>
+        :root {
+            --bg-color: #f8fafc;
+            --surface-color: #ffffff;
+            --text-primary: #0f172a;
+            --text-secondary: #475569;
+            --text-muted: #64748b;
+            --primary-color: #2563eb;
+            --primary-hover: #1d4ed8;
+            --accent-emerald: #059669;
+            --accent-purple: #7c3aed;
+            --border-color: #e2e8f0;
+            --card-shadow: 0 4px 6px -1px rgba(0,0,0,0.05), 0 2px 4px -2px rgba(0,0,0,0.05);
+            --header-border: #cbd5e1;
+            --badge-offline-bg: #dcfce7;
+            --badge-offline-text: #166534;
+            --badge-online-bg: #eff6ff;
+            --badge-online-text: #1e40af;
+        }
+
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --bg-color: #0b0f19;
+                --surface-color: #131b2e;
+                --text-primary: #f1f5f9;
+                --text-secondary: #cbd5e1;
+                --text-muted: #94a3b8;
+                --primary-color: #3b82f6;
+                --primary-hover: #60a5fa;
+                --accent-emerald: #10b981;
+                --accent-purple: #a855f7;
+                --border-color: #1e293b;
+                --card-shadow: 0 4px 6px -1px rgba(0,0,0,0.4);
+                --header-border: #1e293b;
+                --badge-offline-bg: #064e3b;
+                --badge-offline-text: #a7f3d0;
+                --badge-online-bg: #1e3a8a;
+                --badge-online-text: #bfdbfe;
+            }
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-primary);
+            line-height: 1.65;
+        }
+
+        header {
+            background-color: var(--surface-color);
+            border-bottom: 1px solid var(--border-color);
+            padding: 2.5rem 1.5rem;
+            text-align: center;
+        }
+
+        .header-content {
+            max-width: 860px;
+            margin: 0 auto;
+        }
+
+        .app-badge {
+            display: inline-block;
+            background: linear-gradient(135deg, var(--primary-color), var(--accent-purple));
+            color: #ffffff;
+            font-size: 0.8rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            padding: 0.35rem 0.85rem;
+            border-radius: 9999px;
+            margin-bottom: 1rem;
+        }
+
+        h1 {
+            font-size: 2.25rem;
+            font-weight: 800;
+            letter-spacing: -0.02em;
+            margin-bottom: 0.5rem;
+            color: var(--text-primary);
+        }
+
+        .meta-text {
+            color: var(--text-muted);
+            font-size: 0.95rem;
+            margin-top: 0.5rem;
+        }
+
+        .container {
+            max-width: 860px;
+            margin: 2rem auto;
+            padding: 0 1.5rem 4rem;
+        }
+
+        .card {
+            background-color: var(--surface-color);
+            border: 1px solid var(--border-color);
+            border-radius: 12px;
+            padding: 2rem;
+            margin-bottom: 1.75rem;
+            box-shadow: var(--card-shadow);
+        }
+
+        h2 {
+            font-size: 1.4rem;
+            font-weight: 700;
+            color: var(--text-primary);
+            margin-bottom: 1rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 2px solid var(--border-color);
+        }
+
+        h3 {
+            font-size: 1.1rem;
+            font-weight: 600;
+            color: var(--text-primary);
+            margin: 1.25rem 0 0.5rem;
+        }
+
+        p {
+            color: var(--text-secondary);
+            margin-bottom: 1rem;
+        }
+
+        ul,
+        ol {
+            color: var(--text-secondary);
+            margin-left: 1.5rem;
+            margin-bottom: 1rem;
+        }
+
+        li {
+            margin-bottom: 0.4rem;
+        }
+
+        strong {
+            color: var(--text-primary);
+        }
+
+        a {
+            color: var(--primary-color);
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        a:hover {
+            color: var(--primary-hover);
+            text-decoration: underline;
+        }
+
+        .badge {
+            display: inline-flex;
+            align-items: center;
+            font-size: 0.75rem;
+            font-weight: 600;
+            padding: 0.2rem 0.6rem;
+            border-radius: 6px;
+            text-transform: uppercase;
+        }
+
+        .badge-offline {
+            background-color: var(--badge-offline-bg);
+            color: var(--badge-offline-text);
+        }
+
+        .badge-online {
+            background-color: var(--badge-online-bg);
+            color: var(--badge-online-text);
+        }
+
+        .comparison-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 1rem 0 1.5rem;
+            font-size: 0.95rem;
+        }
+
+        .comparison-table th,
+        .comparison-table td {
+            padding: 0.75rem 1rem;
+            text-align: left;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .comparison-table th {
+            background-color: var(--border-color);
+            color: var(--text-primary);
+            font-weight: 600;
+        }
+
+        .notice-box {
+            background-color: rgba(37, 99, 235, 0.08);
+            border-left: 4px solid var(--primary-color);
+            padding: 1rem 1.25rem;
+            border-radius: 6px;
+            margin: 1rem 0;
+        }
+
+        .notice-box p {
+            color: var(--text-primary);
+            font-size: 0.95rem;
+            margin: 0;
+        }
+
+        footer {
+            text-align: center;
+            padding: 2rem 1.5rem;
+            color: var(--text-muted);
+            font-size: 0.9rem;
+            border-top: 1px solid var(--border-color);
+        }
+
+        .toc {
+            background-color: var(--surface-color);
+            border: 1px solid var(--border-color);
+            border-radius: 12px;
+            padding: 1.5rem 2rem;
+            margin-bottom: 2rem;
+        }
+
+        .toc h3 {
+            margin-top: 0;
+            font-size: 1rem;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            color: var(--text-muted);
+        }
+
+        .toc ul {
+            list-style: none;
+            margin-left: 0;
+            margin-bottom: 0;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            gap: 0.5rem;
+        }
+
+        .toc li a {
+            font-size: 0.95rem;
+        }
+
+        @media (max-width: 600px) {
+            h1 {
+                font-size: 1.8rem;
+            }
+
+            .container {
+                padding: 0 1rem 3rem;
+            }
+
+            .card {
+                padding: 1.25rem;
+            }
+
+            .comparison-table {
+                font-size: 0.85rem;
+                display: block;
+                overflow-x: auto;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <div class="header-content">
+        <span class="app-badge">Universal Calculator World</span>
+
+        <h1>Privacy Policy</h1>
+
+        <p class="meta-text">
+            <strong>Effective Date:</strong> October 3, 2026
+            &nbsp;|&nbsp;
+            <strong>Last Updated:</strong> October 3, 2026
+        </p>
+    </div>
+</header>
+
+<div class="container">
+
+    <nav class="toc" aria-label="Table of Contents">
+        <h3>Contents</h3>
+
+        <ul>
+            <li><a href="#introduction">1. Introduction & Overview</a></li>
+            <li><a href="#hybrid-architecture">2. Hybrid Architecture</a></li>
+            <li><a href="#information-collection">3. Information Collection</a></li>
+            <li><a href="#local-data">4. Local Data & Preferences</a></li>
+            <li><a href="#advertising">5. Google AdMob & Advertising</a></li>
+            <li><a href="#third-party-apis">6. Third-Party APIs</a></li>
+            <li><a href="#device-permissions">7. Device Permissions</a></li>
+            <li><a href="#children">8. Children's Privacy</a></li>
+            <li><a href="#data-security">9. Data Security</a></li>
+            <li><a href="#data-retention">10. Data Retention</a></li>
+            <li><a href="#third-party-links">11. Third-Party Policies</a></li>
+            <li><a href="#policy-changes">12. Policy Changes</a></li>
+            <li><a href="#contact-us">13. Contact Information</a></li>
+        </ul>
+    </nav>
+
+    <section id="introduction" class="card">
+        <h2>1. Introduction & Overview</h2>
+
+        <p>
+            Welcome to <strong>Universal Calculator World</strong>
+            ("the App", "we", "our", or "us").
+            This Privacy Policy explains how information is handled when you
+            download, install, and use Universal Calculator World on Android devices.
+        </p>
+
+        <p>
+            We respect your personal privacy. We do not require you to create
+            an account, register an email address, or provide personal identity
+            details to use the calculator features.
+        </p>
+
+        <div class="notice-box">
+            <p>
+                <strong>Summary:</strong>
+                The app provides three core offline calculators:
+                Basic Calculator, Percentage Calculator, and Age & Date Calculator.
+                Other specialized tools may require an internet connection.
+                Online tools may display Google AdMob advertisements.
+            </p>
+        </div>
+    </section>
+
+    <section id="hybrid-architecture" class="card">
+        <h2>2. Hybrid Architecture: Offline vs. Online Tools</h2>
+
+        <p>
+            Universal Calculator World uses a hybrid architecture in which
+            certain calculators operate locally while other tools require
+            internet connectivity.
+        </p>
+
+        <table class="comparison-table">
+            <thead>
+                <tr>
+                    <th>Category</th>
+                    <th>Calculators</th>
+                    <th>Network</th>
+                    <th>Ads</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td>
+                        <span class="badge badge-offline">Offline Core</span>
+                    </td>
+
+                    <td>
+                        <strong>Basic Calculator</strong><br>
+                        <strong>Percentage Calculator</strong><br>
+                        <strong>Age & Date Calculator</strong>
+                    </td>
+
+                    <td>
+                        Never required
+                    </td>
+
+                    <td>
+                        No ads
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <span class="badge badge-online">Online Tools</span>
+                    </td>
+
+                    <td>
+                        Scientific Calculator<br>
+                        Currency Converter<br>
+                        Finance Tools<br>
+                        Unit Converter<br>
+                        Other online utilities
+                    </td>
+
+                    <td>
+                        Required where applicable
+                    </td>
+
+                    <td>
+                        Ads may be displayed
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h3>2.1 Offline Core</h3>
+
+        <p>
+            The Basic Calculator, Percentage Calculator, and Age & Date
+            Calculator are designed to perform their core calculations locally
+            without requiring an internet connection.
+        </p>
+
+        <h3>2.2 Online Tools</h3>
+
+        <p>
+            Other specialized tools may require an active internet connection
+            to obtain external or current data and to provide online services.
+        </p>
+    </section>
+
+    <section id="information-collection" class="card">
+        <h2>3. Information Collection & Processing</h2>
+
+        <p>
+            The application does not require users to create an account or
+            provide personal identity information to use its calculator features.
+        </p>
+
+        <p>
+            When online services or advertisements are used, third-party
+            services may automatically process technical information necessary
+            to provide those services.
+        </p>
+
+        <h3>3.1 Automatically Processed Technical Information</h3>
+
+        <ul>
+            <li>IP address</li>
+            <li>Device and operating-system information</li>
+            <li>Application version</li>
+            <li>Screen and language information</li>
+            <li>Advertising identifiers where applicable</li>
+            <li>Network and request information</li>
+        </ul>
+
+        <p>
+            Such information may be processed by third-party service providers
+            according to their respective privacy policies.
+        </p>
+    </section>
+
+    <section id="local-data" class="card">
+        <h2>4. Local Data, History & Preferences</h2>
+
+        <p>
+            Certain application settings and calculator information may be
+            stored locally on the device to provide the application's features.
+        </p>
+
+        <ul>
+            <li>Calculator history, where available</li>
+            <li>Theme preference</li>
+            <li>Haptic feedback preference</li>
+            <li>Button sound preference</li>
+            <li>Default calculator preference</li>
+            <li>Default currency preference</li>
+            <li>Number formatting preferences</li>
+            <li>Other application settings</li>
+        </ul>
+
+        <p>
+            Local application data is stored on the user's device and is not
+            intentionally uploaded to a remote server by the calculator
+            functionality.
+        </p>
+    </section>
+
+    <section id="advertising" class="card">
+        <h2>5. Google AdMob & Advertising</h2>
+
+        <p>
+            Universal Calculator World may use
+            <strong>Google AdMob</strong> to display advertisements.
+        </p>
+
+        <h3>5.1 Advertisement Types</h3>
+
+        <ul>
+            <li>
+                <strong>Banner Ads:</strong>
+                May appear on eligible online-only calculator screens.
+            </li>
+
+            <li>
+                <strong>Interstitial Ads:</strong>
+                May be displayed after a completed use of an eligible
+                online-only calculator.
+            </li>
+
+            <li>
+                <strong>Offline Calculator Exclusion:</strong>
+                Basic Calculator, Percentage Calculator, and Age & Date
+                Calculator are intended to remain ad-free.
+            </li>
+        </ul>
+
+        <h3>5.2 Test Ads and Production Ads</h3>
+
+        <p>
+            During development and testing, official Google AdMob test
+            advertisements may be used. Before production release, test
+            advertisement units may be replaced with the application's
+            production AdMob advertisement units.
+        </p>
+
+        <h3>5.3 Advertising Information</h3>
+
+        <p>
+            Google and its advertising partners may process technical
+            information, advertising identifiers, device information,
+            IP address, and advertising interaction information for purposes
+            such as advertising delivery, measurement, fraud prevention,
+            and service improvement, subject to applicable Google policies.
+        </p>
+    </section>
+
+    <section id="third-party-apis" class="card">
+        <h2>6. Third-Party APIs</h2>
+
+        <p>
+            Some online tools may connect to third-party services to obtain
+            external or current information required for calculations.
+        </p>
+
+        <p>
+            For example, the Currency Converter may use a third-party
+            exchange-rate service to obtain currency exchange-rate information.
+        </p>
+
+        <p>
+            The application is designed not to intentionally send personal
+            identity information as part of a standard currency conversion
+            request.
+        </p>
+
+        <p>
+            Third-party services may process technical network information
+            according to their own privacy policies.
+        </p>
+    </section>
+
+    <section id="device-permissions" class="card">
+        <h2>7. Device Permissions & Hardware Usage</h2>
+
+        <p>
+            The application may use permissions required for its online and
+            interactive features.
+        </p>
+
+        <ul>
+            <li>
+                <strong>Internet:</strong>
+                Required for online calculators, external data services,
+                and advertisements.
+            </li>
+
+            <li>
+                <strong>Network State:</strong>
+                May be used to determine whether online functionality
+                is available.
+            </li>
+
+            <li>
+                <strong>Haptic Feedback:</strong>
+                The app may use the device vibration/haptic mechanism to
+                provide tactile feedback when buttons and controls are used.
+            </li>
+        </ul>
+
+        <p>
+            Haptic feedback does not record or transmit haptic information.
+            Users can disable haptic feedback through the application's
+            settings when the option is available.
+        </p>
+    </section>
+
+    <section id="children" class="card">
+        <h2>8. Children's Privacy</h2>
+
+        <p>
+            Universal Calculator World is a general-purpose utility
+            application and is not designed to knowingly collect personal
+            information from children.
+        </p>
+
+        <p>
+            We do not intentionally request personal identity information
+            from children through the application.
+        </p>
+    </section>
+
+    <section id="data-security" class="card">
+        <h2>9. Data Security & Storage</h2>
+
+        <p>
+            We take reasonable measures to protect information handled by
+            the application and use secure network connections where supported
+            by third-party services.
+        </p>
+
+        <p>
+            However, no electronic transmission or storage system can be
+            guaranteed to be completely secure.
+        </p>
+    </section>
+
+    <section id="data-retention" class="card">
+        <h2>10. Data Retention & User Controls</h2>
+
+        <p>
+            Locally stored application data may remain on the device until
+            the user clears application data or uninstalls the application.
+        </p>
+
+        <p>
+            Users can manage available application settings and locally
+            stored information using the controls provided by the application
+            and Android operating system.
+        </p>
+    </section>
+
+    <section id="third-party-links" class="card">
+        <h2>11. Third-Party Privacy Policies</h2>
+
+        <p>
+            The application may use third-party services that operate under
+            their own privacy policies.
+        </p>
+
+        <ul>
+            <li>
+                <strong>Google Privacy Policy:</strong>
+                <a
+                    href="https://policies.google.com/privacy"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    https://policies.google.com/priv
